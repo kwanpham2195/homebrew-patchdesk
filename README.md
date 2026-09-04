@@ -8,10 +8,11 @@ Homebrew asks you to trust a tap that is not Homebrew's own before it loads cask
 
 ```bash
 brew trust --tap kwanpham2195/patchdesk
-brew install --cask --no-quarantine kwanpham2195/patchdesk/patchdesk
+brew install --cask kwanpham2195/patchdesk/patchdesk
+xattr -dr com.apple.quarantine /Applications/Patchdesk.app
 ```
 
-`--no-quarantine` is needed because the app is not notarized. Without it macOS refuses to open the app until you clear the quarantine flag by hand.
+The last line is needed because the app is not notarized. Without it macOS refuses to open the app.
 
 ## Update
 

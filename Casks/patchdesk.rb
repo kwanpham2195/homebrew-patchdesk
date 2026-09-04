@@ -9,15 +9,14 @@ cask "patchdesk" do
   homepage "https://github.com/kwanpham2195/patchdesk"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Patchdesk.app"
 
-  # The build is ad-hoc signed, so Gatekeeper blocks a quarantined copy.
+  # The build is ad-hoc signed, so Gatekeeper blocks the quarantined copy until the flag is cleared.
   caveats do
     <<~EOS
-      Patchdesk is not notarized. Install with --no-quarantine, or after
-      installing run:
+      Patchdesk is not notarized. Before the first launch run:
         xattr -dr com.apple.quarantine /Applications/Patchdesk.app
     EOS
   end
