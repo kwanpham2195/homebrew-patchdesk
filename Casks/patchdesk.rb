@@ -9,7 +9,7 @@ cask "patchdesk" do
   homepage "https://github.com/kwanpham2195/patchdesk"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: ">= :monterey"
 
   app "Patchdesk.app"
 
