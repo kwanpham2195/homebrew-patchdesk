@@ -1,6 +1,6 @@
 cask "patchdesk" do
-  version "0.0.9"
-  sha256 "cb597e47a90a76fdab71b2cd85472cc80fb15484fbf33e3227dffb0d7c2d9595"
+  version "0.0.10"
+  sha256 "fbc6ff6bd1d03c7e469821b4ce65398fd928a1a4b299f1ed8de015cb6a1d54e8"
 
   url "https://github.com/kwanpham2195/patchdesk/releases/download/v#{version}/Patchdesk-#{version}-arm64.dmg"
   name "Patchdesk"
@@ -26,5 +26,7 @@ cask "patchdesk" do
     "~/Library/Logs/Patchdesk",
     "~/Library/Preferences/com.centraldigital.patchdesk.plist",
     "~/Library/Saved Application State/com.centraldigital.patchdesk.savedState",
+    "~/Library/Preferences/io.github.kwanpham2195.patchdesk.plist",
+    "~/Library/Saved Application State/io.github.kwanpham2195.patchdesk.savedState",
   ]
 end
