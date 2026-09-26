@@ -1,6 +1,6 @@
 cask "patchdesk" do
-  version "0.0.11"
-  sha256 "396e876cc1b3a4a159d88620b2f4a258141537793ccdf83704c778d611d4290e"
+  version "0.0.12"
+  sha256 "1d16b158103ce410734b7f48fb9c22e06e7e59a957f0d2be6e32f2764fb822c0"
 
   url "https://github.com/kwanpham2195/patchdesk/releases/download/v#{version}/Patchdesk-#{version}-arm64.dmg"
   name "Patchdesk"
@@ -11,6 +11,7 @@ cask "patchdesk" do
   depends_on macos: :monterey
 
   app "Patchdesk.app"
+  binary "#{appdir}/Patchdesk.app/Contents/Resources/bin/patchdesk"
 
   # The build is ad-hoc signed, so Gatekeeper blocks the quarantined copy until the flag is cleared.
   caveats do
