@@ -1,6 +1,6 @@
 cask "patchdesk" do
-  version "0.0.16"
-  sha256 "e44e0f9d173b167b84bf1de2a74509aa98703b9353a84b0aa29a7e157c09cb6d"
+  version "0.0.17"
+  sha256 "3e433471ad38d371bb609fc2ea29ef52d86a403d0b0622ffe2afaa46e26c2e45"
 
   url "https://github.com/kwanpham2195/patchdesk/releases/download/v#{version}/Patchdesk-#{version}-arm64.dmg"
   name "Patchdesk"
